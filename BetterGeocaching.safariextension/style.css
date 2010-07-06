@@ -1,0 +1,95 @@
+a.ceftweet {
+	height: 16px;
+	width: 16px;
+	background-repeat: no-repeat;
+	background-image: url(tweet-icon.png);
+	display: inline-block;
+}
+a.ceftweet span {
+	display: none;
+}
+
+/* /MAP */
+
+body.isMap.fullscreen {
+	overflow: hidden;
+}
+
+body.isMap.fullscreen #navigation {
+	display: none !important;
+}
+
+body.fullscreen #lblMapContent {
+	position: absolute !important;
+	height: 100% !important;
+	top: 0 !important;
+	left: 0 !important;
+	width: 100% !important;
+	z-index: 10000 !important;
+	background-color: white !important;
+	margin-top: 0 !important;
+}
+
+body.fullscreen #lblMapContent td,
+body.fullscreen #lblMapContent tr {
+	height: 100% !important;
+} 
+
+body.fullscreen #map-content {
+	height: 98% !important;
+}
+
+body.fullscreen #ft {
+	display: none !important;
+}
+
+body.fullscreen #uxZoomToAddress {
+	width: 235px !important;
+}
+
+body.fullscreen #uxSideBar {
+	position: relative !important;
+	overflow: scroll !important;
+	width: 100% !important;
+}
+body.fullscreen #cacheListBounding {
+	width: 235px !important;
+	overflow-x: hidden !important;
+}
+
+body.fullscreen #toggle {
+	background: url(smaller.gif) no-repeat;
+	width: 16px;
+	height: 16px;
+}
+
+body.fullscreen #toggle:before {
+	content: "";
+}
+
+body.fullscreen #fdbk_tab {
+	display: none;
+}
+
+#toggle {
+	position: absolute;
+	right: 0;
+	top: 0;
+	z-index: 1000000;
+	background: white url(bigger.gif) no-repeat right;
+	height: 16px;
+	cursor: pointer;
+	text-align: left;
+}
+
+#toggle:before {
+	padding-left: 5px;
+	padding-right: 19px;
+	content: "Fullscreen Map";
+	text-align: left;
+}
+
+
+body.free.fullscreen #uxPremiumFeatures {
+	display: none !important;
+}
